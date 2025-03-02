@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <title>ContactUs</title>
+  </head>
+  <body style="background-color: #f8f9fa">
+    <header class="Menu">
+      <div class="navbar navbar-expand-lg d-flex w-100">
+        <div class="logo w-25">
+          <h1 style="font-size: 3rem">Organic</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center mt-2" id="navbarNav">
+          <ul class="d-flex list-unstyled">
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+              <a href="#shop" data-bs-toggle="dropdown">Shop<i style="margin-top: 5px; margin-left: 3px" class="fa-solid fa-circle-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li> <a href="#vegetables" class="dropdown-item">Vegetales</a> </li>
+                <li><a href="#fruits" class="dropdown-item">Fruits</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div
+          class="icon d-flex justify-content-end align-items-center mb-3 mt-2">
+          <nav class="search mx-3" style=" border: 1px solid orange; border-radius: 50%; width: 40px; height: 40px; display: grid;">
+            <i class="fas fa-search fa-lg mx-2" style="place-self: center; font-size: 20px"></i>
+          </nav>
+          <div class="position-relative mx-3">
+            <i class="fas fa-shopping-bag fa-lg"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="background-color: orange">
+              3
+              <span class="visually-hidden">unread message</span>
+            </span>
+          </div>
+          <a href="./loginPage.html"> <i class="fas fa-user mx-3 fa-lg"></i></a>
+        </div>
+      </div>
+    </header>
+    <!-- Contact Us Section -->
+    <section class="container my-5 p-4 rounded" style="background-color: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)">
+      <h2 class="text-center" style="color: #27ae60; font-weight: bold">
+        Contact Us
+      </h2>
+      <p class="text-center text-muted">
+        We’d love to hear from you! Reach out to us anytime.
+      </p>
+      <div class="row mt-4">
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class="btn text-white w-100" style="background-color: #27ae60">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="col-lg-6">
+          <h4 style="color: #27ae60">Get in Touch</h4>
+          <p class="text-muted">You can contact us using the following details:</p>
+          <p><i class="fas fa-map-marker-alt"></i> 📍 Phnom Penh, Cambodia</p>
+          <p><i class="fas fa-envelope"></i> ✉️ info@organic.com</p>
+          <p><i class="fas fa-phone"></i> ☎️ +855 123 456 789</p>
+
+          <!-- Social Media -->
+          <h5 class="mt-4" style="color: #27ae60">Follow Us</h5>
+          <div>
+            <a href="#" class="text-dark me-3" style="font-size: 1.5rem"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-dark me-3" style="font-size: 1.5rem"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-dark me-3" style="font-size: 1.5rem"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-dark me-3" style="font-size: 1.5rem"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Map -->
+    <div class="container my-5">
+      <h4 class="text-center" style="color: #27ae60">Find Us</h4>
+      <div class="ratio ratio-16x9">
+        <iframe src="https://maps.google.com/maps?q=Phnom%20Penh,%20Cambodia&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border: 0"allowfullscreen=""loading="lazy"></iframe>
+      </div>
+    </div>
+    <footer class="text-center text-lg-start text-white mt-5" style="background-color: #2c3e50; padding-top: 30px; margin-top: 20px">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="text-uppercase" style="color: #27ae60">Organic</h5>
+            <p style="color: #f1f1f1">
+              We provide fresh organic products straight from the farm to your
+              doorstep. Healthy and natural living starts here.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="text-uppercase" style="color: #27ae60">Quick Link</h5>
+            <p style="color: #f1f1f1">
+              HOME <br />
+              Shop<br />
+              Contact Us
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="text-uppercase" style="color: #27ae60">Contact Us</h5>
+            <p style="color: #f1f1f1">
+              📍 Phnom Penh, Cambodia <br />
+              📧 info@organic.com <br />
+              ☎️ +855 123 456 789
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h5 class="text-uppercase" style="color: #27ae60">Follow Us</h5>
+            <div>
+              <a href="#" class="text-white me-3" style="font-size: 1.5rem"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-white me-3" style="font-size: 1.5rem"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white me-3" style="font-size: 1.5rem"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white me-3" style="font-size: 1.5rem"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: #1a252f; color: white">
+        © 2025 Organic. All rights reserved.
+      </div>
+    </footer>
+  </body>
+  <script src="bootstrap.bundle.min.js"></script>
+</html>
